@@ -71,33 +71,33 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-/* Set the body and html to use full height */
-html,
-body {
+/* Ensure the HTML and body take up the full height */
+html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Use a wrapper with flexbox to ensure the footer sticks at the bottom if content is short */
+/* Wrapper ensures content and footer are positioned correctly */
 #wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100%; /* Ensures it spans the full height of the viewport */
 }
 
-/* Main content takes up all available vertical space */
-main#main {
+/* Main content takes up available space, pushing the footer down */
+#main {
     flex: 1;
 }
 
-/* Footer styles */
-footer#footer {
-    background: #333;
+/* Footer styling */
+#footer {
+    background-color: #222; /* Adjust as needed */
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
-    border-top: 1px solid #555;
+    margin-top: auto; /* Push the footer to the bottom */
 }
+
 
 /* Basic */
 
